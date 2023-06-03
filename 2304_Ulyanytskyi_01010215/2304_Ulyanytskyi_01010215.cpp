@@ -15,5 +15,5 @@ int main()
     cin >> user_value;
 
     cout << user_value << " верст в кілометрах: ";
-    cout << std::setprecision(4) << user_value * verst_in_km;
+    cout << setprecision(4) << user_value * verst_in_km;
 }
