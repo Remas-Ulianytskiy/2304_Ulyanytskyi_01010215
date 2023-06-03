@@ -1,19 +1,18 @@
 #include <iostream>
 #include <iomanip>
-#include <Windows.h>
 
 using namespace std;
 
 int main()
 {
-    SetConsoleOutputCP(1251);
+    const float verst_in_km = 1.067f;
+    float user_value;
 
-    const float verst_in_km = 1.067;
-    float user_value = NULL;
-
-    cout << "¬вед≥ть в≥дстань у верстах: ";
+    cout << "Enter the distance in versts: ";
     cin >> user_value;
 
-    cout << user_value << " верст в к≥лометрах: ";
+    cout << user_value << " verst in kilometers: ";
     cout << setprecision(4) << user_value * verst_in_km;
+
+    return 0;
 }
